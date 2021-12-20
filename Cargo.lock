@@ -85,7 +85,7 @@ checksum = "99949a4cb36193d345e2de9f7f9e387a0ff24ea74cabf6aa394acd0a09a2d4e1"
 
 [[package]]
 name = "morslate"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "clap",
  "morse-nostd",

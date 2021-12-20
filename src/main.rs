@@ -17,19 +17,7 @@ fn main() {
 }
 
 fn decode(input: &str) -> String {
-    if input.contains('/') {
-        let mut out = String::with_capacity(input.len());
-        let split = input.split('/');
-
-        for s in split {
-            out.push_str(&decoder(s).expect("invalid characters detected"));
-            out.push(' ');
-        }
-
-        out
-    } else {
-        decoder(input).expect("invalid characters detected")
-    }
+    decoder(input).expect("invalid characters detected")
 }
 
 fn encode(input: &str) -> String {
